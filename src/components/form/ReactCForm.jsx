@@ -62,7 +62,7 @@ const ReactCForm = () => {
     }
 
     try {
-      await axios.post('http://localhost:5001/api/send-email', {
+      await axios.post('/api/send-email', {
         ...form,
         recipient: recipients[form.recipient],
         captchaToken, // ✅ send token to backend
